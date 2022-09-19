@@ -1,17 +1,12 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import headerimage from "../assets/images/headerimage.jfif";
 
 function HeaderImage() {
   return (
     <Box
       sx={{
-        backgroundImage: `url(${headerimage})`,
-        minHeight: "92vh",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        height: "92vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

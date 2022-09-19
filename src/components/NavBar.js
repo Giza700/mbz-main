@@ -8,8 +8,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
-const navs = ["Home", "About", "Services", "Gallery", "Contact Us"];
+const navs = ["Home", "About", "Services", "Gallery", "ContactUs"];
 
 function NavBar(props) {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -24,11 +25,11 @@ function NavBar(props) {
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "#FFF" }}>
+    <Box position="static" sx={{ background: "transparent" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ mx: 4 }}>
-            <Typography variant="h3" color="black">
+            <Typography variant="h3" color="white">
               Logo
             </Typography>
           </Box>
@@ -70,14 +71,16 @@ function NavBar(props) {
                     },
                   }}
                 >
-                  <Typography
-                    variant="subtitle 2"
-                    component="div"
-                    textAlign="center"
-                    sx={{ fontWeight: "bold" }}
-                  >
-                    {nav}
-                  </Typography>
+                  <Link to={`/${nav}`} style={{ textDecoration: "none" }}>
+                    <Typography
+                      variant="subtitle 2"
+                      component="div"
+                      textAlign="center"
+                      sx={{ fontWeight: "bold" }}
+                    >
+                      {nav}
+                    </Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -105,20 +108,22 @@ function NavBar(props) {
                   borderRadius: 3,
                 }}
               >
-                <Typography
-                  variant="h6"
-                  component="div"
-                  textAlign="center"
-                  color="black"
-                >
-                  {nav}
-                </Typography>
+                <Link to={`/${nav}`} style={{ textDecoration: "none" }}>
+                  <Typography
+                    variant="h6"
+                    component="div"
+                    textAlign="center"
+                    color="white"
+                  >
+                    {nav}
+                  </Typography>
+                </Link>
               </Box>
             ))}
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </Box>
   );
 }
 
