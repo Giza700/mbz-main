@@ -7,7 +7,7 @@ import Info from "../sections/Info";
 function ContactUs() {
   return (
     <Box>
-      <Header activeTab="Contact Us" />
+      <Header activeTab="ContactUs" />
       <Info />
       <GetInTouch />
       <Footer />

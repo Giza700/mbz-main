@@ -9,14 +9,14 @@ function Service() {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "flex-end",
-              pr: 5,
+              justifyContent: {xs: "center", md:"flex-end"},
+              pr: {xs: 0, md: 5},
             }}
           >
             <Box
               sx={{
-                width: 450,
-                height: 450,
+                width: {xs: 280,sm: 380, md: 450},
+                height: {xs: 280,sm: 380, md: 450},
                 border: "10px solid black",
               }}
             >
@@ -24,8 +24,8 @@ function Service() {
                 component="img"
                 src={abc}
                 sx={{
-                  width: 450,
-                  height: 450,
+                  width: {xs: 280,sm: 380, md: 450},
+                  height: {xs: 280,sm: 380, md: 450},
                   position: "relative",
                   top: 15,
                   right: 35,
@@ -35,8 +35,11 @@ function Service() {
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={6}>
-          <Box sx={{ pr: 20 }}>
-            <Typography variant="h3" sx={{ fontWeight: "bold" }}>
+          <Box sx={{ pr: {xs:3, md:20}, pl: {xs: 3, md: 0}, py: {xs:2, md:0} }}>
+            <Typography variant="h3" sx={{ fontWeight: "bold", display: {xs: "none", sm: "block"} }}>
+              Hard Workers Producing Healthy & Tasty Food
+            </Typography>
+            <Typography variant="h4" sx={{ fontWeight: "bold",display: {xs: "block", sm: "none"} }}>
               Hard Workers Producing Healthy & Tasty Food
             </Typography>
             <Typography variant="h6">

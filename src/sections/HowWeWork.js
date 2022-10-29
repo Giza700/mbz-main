@@ -2,7 +2,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 function HowWeWork() {
   return (
-    <Box sx={{ my: 10 }}>
+    <Box sx={{ my: {xs: 5, sm:10} }}>
       <Box
         sx={{
           display: "flex",
@@ -12,16 +12,22 @@ function HowWeWork() {
         }}
       >
         <Typography color="#66D643">How We Work</Typography>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold",display: {xs: "none", sm: "block"} }}>
           Working Process to get
         </Typography>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold",display: {xs: "none", sm: "block"} }}>
+          started
+        </Typography>
+        <Typography variant="h5" sx={{ fontWeight: "bold",display: {xs: "block", sm: "none"} }}>
+          Working Process to get
+        </Typography>
+        <Typography variant="h5" sx={{ fontWeight: "bold",display: {xs: "block", sm: "none"} }}>
           started
         </Typography>
       </Box>
       <Box sx={{ px: 5, pt: 5 }}>
         <Grid container spacing={5}>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box>
               <Box
                 sx={{
@@ -44,7 +50,7 @@ function HowWeWork() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box>
               <Box
                 sx={{
@@ -68,7 +74,7 @@ function HowWeWork() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box>
               <Box
                 sx={{
@@ -91,7 +97,7 @@ function HowWeWork() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <Box>
               <Box
                 sx={{

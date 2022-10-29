@@ -5,9 +5,9 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function Footer() {
   return (
-    <Box sx={{ mt: 10, mb: 5 }}>
+    <Box sx={{ mt:{xs: 5,md: 10}, mb: 5 }}>
       <Grid container>
-        <Grid item xs={12} sm={12} md={4} sx={{ pl: 20 }}>
+        <Grid item xs={12} sm={12} md={4} sx={{ pl: {xs: 2, md: 20 }}}>
           <Box>
             <Typography variant="h6" sx={{ fontWeight: "bold", py: 2 }}>
               Messay Bezabih Agro-Business
@@ -20,7 +20,7 @@ function Footer() {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} sx={{ pl: 20 }}>
+        <Grid item xs={12} sm={12} md={4} sx={{ pl: {xs: 2, md: 20 }}}>
           <Box>
             <Typography variant="h6" sx={{ fontWeight: "bold", py: 2 }}>
               Services
@@ -31,7 +31,7 @@ function Footer() {
             <Typography sx={{ py: 1 }}>Grains</Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} sx={{ pl: 10 }}>
+        <Grid item xs={12} sm={12} md={4} sx={{ pl: {xs: 2, md: 10 }}}>
           <Box>
             <Typography variant="h6" sx={{ fontWeight: "bold", py: 2 }}>
               Contact
