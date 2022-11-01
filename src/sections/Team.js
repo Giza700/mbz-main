@@ -21,7 +21,7 @@ function Team() {
         </Typography>
         <Box sx={{ pt: 5 }}>
           <Grid container spacing={3}>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
               <Box
                 component="img"
                 src={Bananas}
@@ -29,7 +29,7 @@ function Team() {
               />
               <Typography>Owner</Typography>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
               <Box
                 component="img"
                 src={Bananas}
@@ -37,7 +37,7 @@ function Team() {
               />
               <Typography>Owner</Typography>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
               <Box
                 component="img"
                 src={Bananas}
@@ -45,7 +45,7 @@ function Team() {
               />
               <Typography>Owner</Typography>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
               <Box
                 component="img"
                 src={Bananas}

@@ -4,10 +4,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function Testimonials() {
   return (
-    <Box sx={{ my: 10, px: 15 }}>
+    <Box sx={{ my: 10, px: {xs: 5, sm:15} }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={4}>
-          <Box>
+          <Box sx={{display:'flex', flexDirection:'column', alignItems: 'center'}}>
             <Typography
               variant="h6"
               color="#6CD74A"
@@ -15,10 +15,16 @@ function Testimonials() {
             >
               Testimonials
             </Typography>
-            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+            <Typography variant="h4" sx={{ fontWeight: "bold",display: {xs: "none", sm: "block"}}}>
               What They Say About Us
             </Typography>
-            <Box sx={{ pt: 5 }}>
+            <Typography variant="h5" sx={{ fontWeight: "bold",display: {xs: "block", sm: "none"} }}>
+              What They Say
+            </Typography>
+            <Typography variant="h5" sx={{ fontWeight: "bold",display: {xs: "block", sm: "none"} }}>
+              About Us
+            </Typography>
+            <Box sx={{ pt: 5, display: {xs: 'none', sm:'block'} }}>
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <Box sx={{ pr: 5 }}>
                   <ArrowBackIosIcon />
@@ -30,7 +36,7 @@ function Testimonials() {
             </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid item xs={12} sm={12} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
           <Card
             sx={{
               bgcolor: "#E0F5F5",
@@ -58,7 +64,7 @@ function Testimonials() {
             </Box>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid item xs={12} sm={12} md={4} sx={{display: 'flex', justifyContent: 'center'}}>
           <Card
             sx={{
               bgcolor: "#E0F5F5",

@@ -8,22 +8,25 @@ function OurStory() {
       <Grid container>
         <Grid item xs={12} sm={12} md={5}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Box component="img" src={abc} sx={{ width: 400, height: 400 }} />
+            <Box component="img" src={abc} sx={{ width: {xs: 300, sm:400}, height: {xs: 300, sm:400} }} />
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={7}>
           <Box>
             <Box sx={{ py: 2 }}>
-              <Typography color="#66D643" sx={{ fontWeight: "bold" }}>
+              <Typography color="#66D643" sx={{ fontWeight: "bold",px: {xs: 3, md: 0} }}>
                 Our Story
               </Typography>
             </Box>
-            <Box sx={{ py: 2 }}>
-              <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+            <Box sx={{ py: 2, px: {xs: 3, md: 0} }}>
+              <Typography variant="h4" sx={{ fontWeight: "bold", display: {xs: "none", sm: "block"} }}>
+                A Farm Like No Other
+              </Typography>
+              <Typography variant="h5" sx={{ fontWeight: "bold", display: {xs: "block", sm: "none"} }}>
                 A Farm Like No Other
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", py: 2 }}>
+            <Box sx={{ display: "flex", alignItems: "center", py: 2, px: {xs: 3, md:0} }}>
               <Box sx={{ pr: 2 }}>
                 <Avatar sx={{ bgcolor: "primary.main" }}>
                   <DoneIcon />
@@ -43,7 +46,7 @@ function OurStory() {
                 </Typography>
               </Box>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center", py: 2 }}>
+            <Box sx={{ display: "flex", alignItems: "center", py: 2, px: {xs: 3, md:0} }}>
               <Box sx={{ pr: 2 }}>
                 <Avatar sx={{ bgcolor: "primary.main" }}>
                   <DoneIcon />

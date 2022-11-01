@@ -8,7 +8,7 @@ function Info() {
     <Box sx={{ my: 10, px: 10 }}>
       <Grid container spacing={5}>
         <Grid item xs={12} sm={12} md={4}>
-          <Box>
+          <Box sx={{display: {xs: 'flex', md: 'block'},justifyContent: 'center'}}>
             <Box
               sx={{
                 border: "1px solid black",
@@ -17,12 +17,12 @@ function Info() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                width: 300,
-                height: 300,
+                width: {xs: 250, sm: 300},
+                height: {xs: 250, sm: 300},
               }}
             >
               <Box>
-                <MailOutlineIcon sx={{ width: 200, height: 200 }} />
+                <MailOutlineIcon sx={{ width: {xs: 100, sm: 200}, height: {xs: 100, sm: 200} }} />
               </Box>
               <Typography color="#66D643">Email Us</Typography>
               <Typography sx={{ fontWeight: "bold" }}>
@@ -32,7 +32,7 @@ function Info() {
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
-          <Box>
+          <Box sx={{display: {xs: 'flex', md: 'block'},justifyContent: 'center'}}>
             <Box
               sx={{
                 border: "1px solid black",
@@ -41,12 +41,12 @@ function Info() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                width: 300,
-                height: 300,
+                width: {xs: 250, sm: 300},
+                height: {xs: 250, sm: 300},
               }}
             >
               <Box>
-                <PhoneInTalkOutlinedIcon sx={{ width: 200, height: 200 }} />
+                <PhoneInTalkOutlinedIcon sx={{ width: {xs: 100, sm: 200}, height: {xs: 100, sm: 200} }} />
               </Box>
               <Typography color="#66D643">Make a Call</Typography>
               <Typography sx={{ fontWeight: "bold" }}>+251911254789</Typography>
@@ -54,7 +54,7 @@ function Info() {
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={4}>
-          <Box>
+          <Box sx={{display: {xs: 'flex', md: 'block'},justifyContent: 'center'}}>
             <Box
               sx={{
                 border: "1px solid black",
@@ -63,12 +63,12 @@ function Info() {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                width: 300,
-                height: 300,
+                width: {xs: 250, sm: 300},
+                height: {xs: 250, sm: 300},
               }}
             >
               <Box>
-                <PinDropOutlinedIcon sx={{ width: 200, height: 200 }} />
+                <PinDropOutlinedIcon sx={{ width: {xs: 100, sm: 200}, height: {xs: 100, sm: 200} }} />
               </Box>
               <Typography color="#66D643">Office Address</Typography>
               <Typography sx={{ fontWeight: "bold" }}>snnprs, gamo</Typography>

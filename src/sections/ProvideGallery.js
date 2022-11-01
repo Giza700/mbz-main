@@ -9,6 +9,8 @@ function ProvideGallery() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          px: {xs:0, sm:5}, 
+          py:{xs: 3,py:0}
         }}
       >
         <Box component="img" src={Bananas} sx={{ width: 300, height: 300 }} />

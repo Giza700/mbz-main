@@ -3,7 +3,7 @@ import Bananas from "../assets/images/bananas.jfif";
 
 function Provide() {
   return (
-    <Box sx={{ bgcolor: "#E0F5F5", p: 10 }}>
+    <Box sx={{ bgcolor: "#E0F5F5", p: {xs: 3, sm:10} }}>
       <Box
         sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
       >
@@ -14,7 +14,7 @@ function Provide() {
           Benefits Health
         </Typography>
         <Box sx={{ display: { xs: "block", sm: "block", md: "flex" }, Pt: 3 }}>
-          <Box>
+          <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', px: {xs:0, sm:5}, py:{xs: 3,py:0}}}>
             <Box
               component="img"
               src={Bananas}
@@ -22,7 +22,7 @@ function Provide() {
             />
             <Typography>Fruits Loads of Potassium</Typography>
           </Box>
-          <Box>
+          <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', px: {xs:0, sm:5}, py:{xs: 3,py:0}}}>
             <Box
               component="img"
               src={Bananas}
@@ -30,7 +30,7 @@ function Provide() {
             />
             <Typography>Fruits Loads of Potassium</Typography>
           </Box>
-          <Box>
+          <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', px: {xs:0, sm:5}, py:{xs: 3,py:0}}}>
             <Box
               component="img"
               src={Bananas}

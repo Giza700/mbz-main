@@ -25,7 +25,7 @@ function ProductCard() {
     <Grid
       item
       xs={12}
-      sm={6}
+      sm={12}
       md={4}
       sx={{ display: "flex", justifyContent: "center" }}
     >

@@ -71,7 +71,7 @@ function NavBar(props) {
                     },
                   }}
                 >
-                  <Link to={`/${nav}`} style={{ textDecoration: "none" }}>
+                  <Link to={`/${nav}`} style={{ textDecoration: "none", color: 'black' }}>
                     <Typography
                       variant="subtitle 2"
                       component="div"
