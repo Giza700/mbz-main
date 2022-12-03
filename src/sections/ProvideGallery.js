@@ -10,7 +10,6 @@ const imageArray = [Bananas, Bananas,Bananas,Bananas,Bananas,Bananas,Bananas,Ban
 
 function ProvideGallery() {
   const slideLeft = () => {
-    console.log("here")
 		var slider = document.getElementById("cardslider")
 		slider.scrollLeft = slider.scrollLeft - 400
 	}
