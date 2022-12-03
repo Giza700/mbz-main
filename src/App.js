@@ -1,7 +1,9 @@
-import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, Slide, ThemeProvider } from '@mui/material';
 import Home from "./pages/Home";
 import theme from "./Theme";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { SnackbarProvider } from 'notistack';
+
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
@@ -11,6 +13,14 @@ function App() {
   return (
     <Box>
       <ThemeProvider theme={theme}>
+      <SnackbarProvider
+          autoHideDuration={3000}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+          }}
+          TransitionComponent={Slide}
+        >
         <CssBaseline />
         <Router>
           <Routes>
@@ -22,6 +32,7 @@ function App() {
             <Route exact path="/gallery" element={<Gallery />} />
           </Routes>
         </Router>
+        </SnackbarProvider>
       </ThemeProvider>
     </Box>
   );
